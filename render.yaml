@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pronosticador
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn pronosticador.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: pronosticador.settings
+      - key: PYTHON_VERSION
+        value: 3.10

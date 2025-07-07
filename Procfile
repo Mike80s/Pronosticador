@@ -1,1 +1,1 @@
-web: gunicorn tiendaonline.wgsi --log-file -
+web: gunicorn pronosticador.wgsi:application
