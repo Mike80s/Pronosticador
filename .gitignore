@@ -1,0 +1,19 @@
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*.env
+
+# Archivos de Django
+db.sqlite3
+*.log
+staticfiles/
+media/
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Configuraciones locales
+*.sqlite3
+*.DS_Store
